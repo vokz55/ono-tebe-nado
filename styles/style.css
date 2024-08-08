@@ -1,4 +1,4 @@
-header {
+.header {
   display: grid;
   align-items: center;
   padding: 92px 24px 96px 24px;
@@ -21,7 +21,7 @@ header {
   list-style: none;
 }
 
-.header__links-list-item_decoration-none {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -35,17 +35,24 @@ header {
   height: 100%;
 }
 
-.contacts {
+.address {
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__address {
   min-width: 240px;
   margin-right: 26px;
   justify-self: end;
 }
 
-address {
+.full-address {
   line-height: 135%;
   text-align: left;
   font-size: 18px;
-  font-style: normal;
 }
 
 /* Нижние 2 класса - настройки для нижнего подчеркивания, в макете они ниже чем по дефолту */
@@ -65,7 +72,7 @@ a.custom-underscore::after {
   content: "";
 }
 
-.contact__item {
+.address__item {
   line-height: 135%;
   font-size: 18px;
 }
@@ -73,7 +80,7 @@ a.custom-underscore::after {
 .cover {
   position: relative;
   z-index: -2;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -96,7 +103,6 @@ a.custom-underscore::after {
 
 .aligned-text {
   display: block;
-  line-height: 115%;
   line-height: 138px;
   color: #fff;
   text-transform: uppercase;
@@ -146,6 +152,7 @@ a.custom-underscore::after {
 }
 
 .bet-button {
+  font-family: Raleway, sans-serif;
   width: 256px;
   height: 51px;
   border: 1px solid #fff;
@@ -214,15 +221,15 @@ a.custom-underscore::after {
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -265,33 +272,24 @@ a.custom-underscore::after {
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
   line-height: 120%;
   font-size: 20px;
   font-weight: 400;
   grid-column-start: 2;
-}
-
-.about__text__first {
-  padding: 0 2px 20px 0;
-  letter-spacing: 0;
-  letter-spacing: 0.01em;
+  padding: 0 3px 0 0;
+  gap: 20px;
 }
 
 .footer {
   display: grid;
   align-items: start;
-  padding-top: 180px;
+  padding-top: 183px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
   grid-template-columns: 1fr auto 1fr;
-}
-
-.contacts__footer {
-  line-height: 135%;
-  letter-spacing: 0.01em;
-  font-size: 18px;
-  font-weight: 400;
 }
 
 .footer__menu {
